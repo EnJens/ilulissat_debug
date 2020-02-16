@@ -1,0 +1,171 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x06 J1
+U 1 1 5E489C5B
+P 3700 4150
+F 0 "J1" H 3618 4567 50  0000 C CNN
+F 1 "Conn_01x06" H 3618 4476 50  0000 C CNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_1x06_P1.27mm_Vertical" H 3700 4150 50  0001 C CNN
+F 3 "~" H 3700 4150 50  0001 C CNN
+	1    3700 4150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 5E48A1C5
+P 5350 4950
+F 0 "J3" H 5430 4942 50  0000 L CNN
+F 1 "Conn_01x04" H 5430 4851 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5350 4950 50  0001 C CNN
+F 3 "~" H 5350 4950 50  0001 C CNN
+	1    5350 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5E48B193
+P 4900 3050
+F 0 "J2" H 4980 3042 50  0000 L CNN
+F 1 "Conn_01x04" H 4980 2951 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4900 3050 50  0001 C CNN
+F 3 "~" H 4900 3050 50  0001 C CNN
+	1    4900 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3950 4300 3950
+Wire Wire Line
+	3900 4050 4300 4050
+Wire Wire Line
+	3900 4150 4300 4150
+Wire Wire Line
+	3900 4250 4300 4250
+Wire Wire Line
+	3900 4350 4300 4350
+Wire Wire Line
+	3900 4450 4300 4450
+Text Label 3950 3950 0    50   ~ 0
+UART_TX
+Text Label 3950 4050 0    50   ~ 0
+UART_RX
+Text Label 3950 4150 0    50   ~ 0
+SWDIO
+Text Label 3950 4250 0    50   ~ 0
+GND
+Text Label 3950 4350 0    50   ~ 0
+SWCLK
+Text Label 3950 4450 0    50   ~ 0
+VDD
+$Comp
+L power:VDD #PWR04
+U 1 1 5E48BDB1
+P 4300 4450
+F 0 "#PWR04" H 4300 4300 50  0001 C CNN
+F 1 "VDD" V 4317 4578 50  0000 L CNN
+F 2 "" H 4300 4450 50  0001 C CNN
+F 3 "" H 4300 4450 50  0001 C CNN
+	1    4300 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5E48C2D3
+P 4300 4250
+F 0 "#PWR03" H 4300 4000 50  0001 C CNN
+F 1 "GND" V 4305 4122 50  0000 R CNN
+F 2 "" H 4300 4250 50  0001 C CNN
+F 3 "" H 4300 4250 50  0001 C CNN
+	1    4300 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4300 2950 4700 2950
+Wire Wire Line
+	4300 3050 4700 3050
+Wire Wire Line
+	4300 3150 4700 3150
+Wire Wire Line
+	4300 3250 4700 3250
+Text Label 4350 2950 0    50   ~ 0
+SWDIO
+Text Label 4350 3050 0    50   ~ 0
+GND
+Text Label 4350 3150 0    50   ~ 0
+SWCLK
+Text Label 4350 3250 0    50   ~ 0
+VDD
+$Comp
+L power:VDD #PWR02
+U 1 1 5E48E838
+P 4300 3250
+F 0 "#PWR02" H 4300 3100 50  0001 C CNN
+F 1 "VDD" V 4317 3378 50  0000 L CNN
+F 2 "" H 4300 3250 50  0001 C CNN
+F 3 "" H 4300 3250 50  0001 C CNN
+	1    4300 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5E48E83E
+P 4300 3050
+F 0 "#PWR01" H 4300 2800 50  0001 C CNN
+F 1 "GND" V 4305 2922 50  0000 R CNN
+F 2 "" H 4300 3050 50  0001 C CNN
+F 3 "" H 4300 3050 50  0001 C CNN
+	1    4300 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 4850 5150 4850
+Wire Wire Line
+	4750 4950 5150 4950
+Text Label 4800 4850 0    50   ~ 0
+UART_TX
+Text Label 4800 4950 0    50   ~ 0
+UART_RX
+$Comp
+L power:GND #PWR06
+U 1 1 5E4915A2
+P 5100 5250
+F 0 "#PWR06" H 5100 5000 50  0001 C CNN
+F 1 "GND" H 5105 5077 50  0000 C CNN
+F 2 "" H 5100 5250 50  0001 C CNN
+F 3 "" H 5100 5250 50  0001 C CNN
+	1    5100 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 5150 5100 5150
+Wire Wire Line
+	5100 5150 5100 5250
+$Comp
+L power:VDD #PWR05
+U 1 1 5E491A2B
+P 4550 5000
+F 0 "#PWR05" H 4550 4850 50  0001 C CNN
+F 1 "VDD" H 4567 5173 50  0000 C CNN
+F 2 "" H 4550 5000 50  0001 C CNN
+F 3 "" H 4550 5000 50  0001 C CNN
+	1    4550 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 5050 4550 5050
+Wire Wire Line
+	4550 5050 4550 5000
+$EndSCHEMATC
